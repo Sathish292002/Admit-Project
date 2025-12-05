@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-logo {
+    width: 50px;
+    margin: 20px;
+    filter: invert(1);
+    position: fixed;
+    top: 10px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 10px 0;
+    transition: border-color 0.3s ease;
+}
+
+.input-box .icon-image {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+.input-box:focus-within {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.remember input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #000;
+  cursor: pointer;
+}
+
+.remember label {
+  user-select: none;
+}
+
+.forgot {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    color: #FFF;
+    background-color: #00000095;
+    transition: background-color 0.3s ease-in;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.divider span {
+  white-space: nowrap;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.register-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.register-text a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+
+.login-image {
+    height: 100vh;
+    object-fit: cover;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.drone-image {
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  width: 400px;
+
+  animation: floatDrone 4s ease-in-out infinite;
+}
+
+
+@keyframes floatDrone {
+  0% {
+    transform: translateY(10);
+  }
+  50% {
+    transform: translateY(-50px); 
+  }
+  100% {
+    transform: translateY(10);
+  }
+}

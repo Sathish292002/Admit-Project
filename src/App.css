@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,43 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* desktop - large screens */
+h1 {
+  font-size: 2.5rem;   /* ~40px */
+}
+h2 {
+  font-size: 2rem;     /* ~32px */
+}
+h3 {
+  font-size: 1.5rem;   /* ~24px */
+}
+p {
+  font-size: 1rem;     /* ~16px */
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;   /* ~28px */
+  }
+  h2 {
+    font-size: 1.5rem;    /* ~24px */
+  }
+  h3 {
+    font-size: 1.25rem;   /* ~20px */
+  }
+  p {
+    font-size: 0.9rem;    /* ~14px */
+  }
+}
+
+
